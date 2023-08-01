@@ -44,12 +44,21 @@ const Settings1 = ({ navigation }) => {
                     <Text style={styles.text}>Customer Support</Text>
                 </TouchableOpacity>
 
+                <TouchableOpacity onPress={() => navigation.navigate("EmergencyScreen")}>
+                    <Text style={styles.text}>Emergency Call</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate("SosSignal")}>
+                    <Text style={styles.text}>SOS Signal</Text>
+                </TouchableOpacity>
+
                 <TouchableOpacity onPress={() => navigation.navigate("AboutMe")}>
                     <Text style={styles.text}>About Me</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate("SOSScreen")}>
-                    <Text style={styles.text}>SOS Signal</Text>
+
+                <TouchableOpacity onPress={() => navigation.navigate("GenerateMeeting")}>
+                    <Text style={styles.text}>Video Call</Text>
                 </TouchableOpacity>
+                
                 <TouchableOpacity onPress={() => navigation.navigate("FeedBack")}>
                     <Text style={styles.text}>Give FeedBack</Text>
                 </TouchableOpacity>
@@ -62,6 +71,7 @@ const Settings1 = ({ navigation }) => {
                 <TouchableOpacity onPress={() => navigation.navigate("PrivacyPolicy")}>
                     <Text style={styles.text}>Privacy Policy</Text>
                 </TouchableOpacity>
+               
                 <TouchableOpacity onPress={() => logout()}>
                     <Text style={styles.text}>Log Out</Text>
                 </TouchableOpacity>

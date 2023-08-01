@@ -33,12 +33,16 @@ import ContactMe from '../screens/settings/contactMe/ContactMe';
 import AboutApp from '../screens/settings/aboutApp/AboutApp';
 import Notification from '../components/notification/Notification';
 import UploadProfile from '../screens/settings/uploadProfilePicture/UploadProfile';
-import SOSScreen from '../screens/settings/sos/SOSScreen';
 import PrivacyPolicy from '../screens/settings/privacyPolicy/PrivacyPolicy';
 import SearchUserPage from '../screens/searchUserPage/SearchUserPage';
 import OtherUserProfile from '../screens/profile/OtherUserProfile';
 import MessagePage from '../screens/chatSection/MessagePage';
+import VideoCall from '../screens/settings/videoCall/VideoCall';
 
+import GenerateMeeting from "../screens/settings/generateMeeting/GenerateMeeting";
+import EmergencyScreen from '../screens/emergencyScreen/EmergencyScreen';
+import SosSignal from '../screens/sosSignal/SosSignal';
+// import PhoneDialerWithShake from '../screens/phoneDialerWithShake/PhoneDialerWithShake';
 
 
 
@@ -118,7 +122,6 @@ const MainNavigator = () => {
 
         <Stack.Screen name='XplafesList' component={TabNavigator} />
         <Stack.Screen name='UploadProfile' component={UploadProfile} />
-        {/* <Stack.Screen name='SOSScreen' component={SOSScreen} /> */}
 
         <Stack.Screen name='SearchUserPage' component={SearchUserPage}
           options={{ animation: "simple_push" }}
@@ -131,7 +134,25 @@ const MainNavigator = () => {
           options={{ animation: "slide_from_bottom" }}
         />
 
+        <Stack.Screen name="GenerateMeeting" component={GenerateMeeting}
+          options={{ animation: "slide_from_bottom" }}
 
+        />
+
+        <Stack.Screen name="VideoCall" component={VideoCall}
+          options={{ animation: "slide_from_bottom" }}
+        />
+
+        {/* <Stack.Screen name="PhoneDialerWithShake" component={PhoneDialerWithShake} /> */}
+
+
+        <Stack.Screen name="EmergencyScreen" component={EmergencyScreen}
+          options={{ animation: "slide_from_bottom" }}
+        />
+
+        <Stack.Screen name="SosSignal" component={SosSignal}
+          options={{ animation: "slide_from_bottom" }}
+        />
 
       </Stack.Navigator>
 

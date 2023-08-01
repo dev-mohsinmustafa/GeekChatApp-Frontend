@@ -4,9 +4,12 @@ import MainNavigator from './src/navigation/MainNavigator'
 
 const App = () => {
   return (
+    <View style={{ flex: 1, }}>
+
       <MainNavigator />
 
-    
+    </View>
+
   )
 }
 
