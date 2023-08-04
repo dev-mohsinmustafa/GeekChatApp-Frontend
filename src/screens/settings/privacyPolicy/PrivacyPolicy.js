@@ -19,14 +19,16 @@ const PrivacyPolicy = ({ navigation }) => {
         <View style={styles.container}>
 
 
+<View style={{flex:2}}>
 
             <Header title="Privacy Policy" marginLeft={31} marginLeft1={27}
                 marginLeft2={9}
                 image1={require("../../../assets/images/arrow-left.png")}
                 image2={require("../../../assets/images/bible.png")}
-
-
-            />
+                
+                
+                />
+                </View>
 
 
             <ScrollView style={styles.container2}>

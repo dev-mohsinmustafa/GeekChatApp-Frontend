@@ -13,7 +13,9 @@ const SosSignal = () => {
     const handlePanicButtonPress = async () => {
         const messageData = {
             to: '+923007261440',
-            from: '+17692103456',
+            // from: '+17692103456',
+            from: '+12512972937',
+
             body: 'Hello, Umer Welcome to MtechSolutions',
         };
 
@@ -98,6 +100,7 @@ const styles = StyleSheet.create({
     contactText: {
         fontSize: 16,
         marginBottom: 5,
+        color:"red"
     },
 });
 

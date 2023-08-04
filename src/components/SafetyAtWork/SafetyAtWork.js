@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 import ratios from '../../styles/ratios';
 import Header from '../header/Header';
@@ -20,10 +20,10 @@ const SafetyAtWork = () => {
 
 
             <Header title="Safety at Work" marginLeft={31} marginLeft1={27}
-            marginLeft2={9}
-            image1={require("../../assets/images/arrow-left.png")}
+                marginLeft2={9}
+                image1={require("../../assets/images/arrow-left.png")}
                 image2={require("../../assets/images/bible.png")}
-                
+
 
             />
 
@@ -53,18 +53,25 @@ const SafetyAtWork = () => {
                     />
                 </View>
 
+                <ScrollView style={{flex:1}}>
 
-                <View style={styles.container3}>
-                    <Text style={styles.lorem}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Quis vel eros donec ac odio tempor orci dapibus. Purus sit amet luctus venenatis lectus magna fringilla. Vitae et leo duis ut diam quam nulla porttitor massa. Convallis posuere morbi leo urna molestie at elementum. Nulla aliquet enim tortor at auctor urna. Laoreet id donec ultrices tincidunt. Blandit massa enim nec dui nunc.
-                    </Text>
-
-                </View>
-
-
-                <View>
-                    <Text style={styles.totor}>Et tortor consequat id porta nibh venenatis cras sed felis. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lorem sed risus ultricies tristique nulla aliquet enim tortor. Sed libero enim sed faucibus turpis. Eget nunc lobortis mattis aliquam.</Text>
-                </View>
+                    <View style={styles.container3}>
+                        <Text style={styles.lorem}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Quis vel eros donec ac odio tempor orci dapibus. Purus sit amet luctus venenatis lectus magna fringilla. Vitae et leo duis ut diam quam nulla porttitor massa. Convallis posuere morbi leo urna molestie at elementum. Nulla aliquet enim tortor at auctor urna. Laoreet id donec ultrices tincidunt. Blandit massa enim nec dui nunc.
+                        </Text>
+                    </View>
+                    <View>
+                        <Text style={styles.totor}>Et tortor consequat id porta nibh venenatis cras sed felis. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lorem sed risus ultricies tristique nulla aliquet enim tortor. Sed libero enim sed faucibus turpis. Eget nunc lobortis mattis aliquam.</Text>
+                    </View>
+                    <View style={styles.container3}>
+                        <Text style={styles.lorem}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Quis vel eros donec ac odio tempor orci dapibus. Purus sit amet luctus venenatis lectus magna fringilla. Vitae et leo duis ut diam quam nulla porttitor massa. Convallis posuere morbi leo urna molestie at elementum. Nulla aliquet enim tortor at auctor urna. Laoreet id donec ultrices tincidunt. Blandit massa enim nec dui nunc.
+                        </Text>
+                    </View>
+                    <View>
+                        <Text style={styles.totor}>Et tortor consequat id porta nibh venenatis cras sed felis. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lorem sed risus ultricies tristique nulla aliquet enim tortor. Sed libero enim sed faucibus turpis. Eget nunc lobortis mattis aliquam.</Text>
+                    </View>
+                </ScrollView>
 
 
             </View>
@@ -90,7 +97,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#FFECD0",
         borderRadius: 30,
-      
+
     },
     container1: {
         flex: 0.3,

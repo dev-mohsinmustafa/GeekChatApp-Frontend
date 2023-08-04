@@ -130,13 +130,18 @@ const FeedBack = ({ navigation }) => {
 
 
             <View style={styles.radioGroup}>
-                <Text>Overall, how did you feel about the services?</Text>
+                <Text style={styles.text}>Overall, how did you feel about the services?</Text>
 
                 <RadioGroup
                     style={styles.radioButton}
                     radioButtons={radioButtons}
                     onPress={setSelectedId}
                     selectedId={selectedId}
+                    radioButtonStyle={{ // Add this line to pass the style to the radio buttons
+                        color: "red",
+                        fontFamily: "Nunito-Regular",
+                        fontSize: fontPixel(18),
+                      }}
                 />
             </View>
 
@@ -214,6 +219,7 @@ const styles = StyleSheet.create({
     },
     radioButton: {
         backgroundColor: "pink",
+        
 
     },
 

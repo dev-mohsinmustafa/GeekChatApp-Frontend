@@ -71,6 +71,9 @@ const Settings1 = ({ navigation }) => {
                 <TouchableOpacity onPress={() => navigation.navigate("PrivacyPolicy")}>
                     <Text style={styles.text}>Privacy Policy</Text>
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate("ShakeSignal")}>
+                    <Text style={styles.text}>Shake Signal</Text>
+                </TouchableOpacity>
                
                 <TouchableOpacity onPress={() => logout()}>
                     <Text style={styles.text}>Log Out</Text>

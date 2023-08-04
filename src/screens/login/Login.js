@@ -10,6 +10,7 @@ import ratios from '../../styles/ratios';
 import { useNavigation } from '@react-navigation/native';
 import ErrorHandler from '../../components/ErrorHandler';
 import MainButton from '../../components/mainButton/MainButton';
+import Icon from "react-native-vector-icons/Feather"
 
 let {
     widthPixel,
@@ -138,6 +139,15 @@ const Login = () => {
     }
 
 
+    const [showPassword, setShowPassword] = useState(false);
+    const [hidePassword, setHidePassword] = useState(true);
+
+
+    const passwordHandler = () => {
+        setShowPassword(!showPassword)
+    }
+
+
     return (
 
 
@@ -196,12 +206,24 @@ const Login = () => {
 
                                     onChangeText={(text) => setFdata({ ...fdata, password: text })}
 
-                                    secureTextEntry={true}
+                                    // secureTextEntry={true}
+                                    // for password 
+                                    secureTextEntry={!showPassword}
+
 
                                     onPressIn={() => setErrormsg(null)}
-
-
                                 />
+
+                                <TouchableOpacity onPress={passwordHandler} style={{ position: 'absolute', right: 10, top: 8, }}>
+                                    {
+                                        showPassword ?
+                                            <Icon name='eye' size={20} color="#FFECD0" />
+
+                                            :
+                                            <Icon name='eye-off' size={20} color="#FFECD0" />
+
+                                    }
+                                </TouchableOpacity>
                             </View>
 
                         </View>

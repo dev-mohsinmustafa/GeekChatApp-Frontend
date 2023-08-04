@@ -42,6 +42,7 @@ import VideoCall from '../screens/settings/videoCall/VideoCall';
 import GenerateMeeting from "../screens/settings/generateMeeting/GenerateMeeting";
 import EmergencyScreen from '../screens/emergencyScreen/EmergencyScreen';
 import SosSignal from '../screens/sosSignal/SosSignal';
+import ShakeSignal from '../screens/shakeSignal/ShakeSignal';
 // import PhoneDialerWithShake from '../screens/phoneDialerWithShake/PhoneDialerWithShake';
 
 
@@ -151,6 +152,9 @@ const MainNavigator = () => {
         />
 
         <Stack.Screen name="SosSignal" component={SosSignal}
+          options={{ animation: "slide_from_bottom" }}
+        />
+        <Stack.Screen name="ShakeSignal" component={ShakeSignal}
           options={{ animation: "slide_from_bottom" }}
         />
 
