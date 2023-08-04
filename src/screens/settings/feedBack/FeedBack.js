@@ -164,6 +164,7 @@ const FeedBack = ({ navigation }) => {
                     onPressIn={() => setErrormsg(null)}
                     multiline={true}
                     numberOfLines={20}
+                    style={{color:"red"}}
                 // style={styles.input}
                 />
             </View>

@@ -24,6 +24,9 @@ let {
 
 const Login = () => {
 
+    const [showPassword, setShowPassword] = useState(false);
+    const [hidePassword, setHidePassword] = useState(true);
+
     const navigation = useNavigation()
 
 
@@ -139,8 +142,7 @@ const Login = () => {
     }
 
 
-    const [showPassword, setShowPassword] = useState(false);
-    const [hidePassword, setHidePassword] = useState(true);
+    
 
 
     const passwordHandler = () => {

@@ -151,7 +151,8 @@ const SearchUserPage = ({ navigation }) => {
                 <Text style={chat}>Search</Text>
                 <TextInput
                     placeholder='Search by Username...'
-                    style={searchbar}
+                    placeholderTextColor={"#372329"}
+                    style={[searchbar,{color:"#372329"}]}
                     onChangeText={(text) => setKeyword(text)}
                 />
 
@@ -174,8 +175,9 @@ const SearchUserPage = ({ navigation }) => {
                                         {
                                             data.map((item, index) => {
                                                 return (
-                                                    <UserCard
-                                                        key={item.username} // beacuse username is unique
+                                                    <UserCard 
+                                                    key={index}
+                                                        username={item.username} // beacuse username is unique
                                                         // data ya users dekhana ke leye
                                                         user={item} //or agy bhej dya user agy forward kr dya
                                                     />

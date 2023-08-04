@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View, ImageBackground } from 'react-native'
 
 const Home = ({ navigation }) => {
   return (
@@ -7,10 +7,13 @@ const Home = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate("ConnectNearby")}>
 
         <View>
-          <Image
-
+          <ImageBackground
+          resizeMode='cover'
+          style={{width:"100%", height:"100%",}}
             source={require("../../assets/images/map.png")}
-          />
+          >
+
+          </ImageBackground>
         </View>
 
       </TouchableOpacity>

@@ -32,7 +32,7 @@ const GenerateMeeting = ({ navigation }) => {
                     onChangeText={(text) => setUsername(text)}
                     onPressIn={() => setErrormsg(null)}
 
-                    style={{ borderWidth: 1, borderColor: "#FF3974", marginBottom: 20 }}
+                    style={{ color: "#372329", borderWidth: 1, borderColor: "#FF3974", marginBottom: 20 }}
                 />
                 <TextInput
                     placeholder='Enter Meeting Id'
@@ -44,7 +44,7 @@ const GenerateMeeting = ({ navigation }) => {
                     onChangeText={(text) => setRandomId(text)}
                     onPressIn={() => setErrormsg(null)}
 
-                    style={{ borderWidth: 1, borderColor: "#FF3974", marginBottom: 20 }}
+                    style={{color: "#372329",borderWidth: 1, borderColor: "#FF3974", marginBottom: 20 }}
                 />
 
             </View>

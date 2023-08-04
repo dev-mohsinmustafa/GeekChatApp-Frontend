@@ -16,7 +16,7 @@ const SosSignal = () => {
             // from: '+17692103456',
             from: '+12512972937',
 
-            body: 'Hello, Umer Welcome to MtechSolutions',
+            body: 'Hello, Umer your sister is in problem please help her!',
         };
 
 

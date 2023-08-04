@@ -120,7 +120,8 @@ const AllChats = ({ navigation }) => {
                     <Text style={chat}>Your Chats</Text>
                     <TextInput
                         placeholder='Search'
-                        style={searchbar}
+                        placeholderTextColor={"#372329"}
+                        style={[searchbar,{color:"#372329"}]}
                         onChangeText={(text) => setKeyword(text)}
 
 

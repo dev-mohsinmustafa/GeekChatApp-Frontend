@@ -316,7 +316,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: widthPixel(10),
     backgroundColor: "#FFFFFF",
     width: "80%",
-    height: "70%"
+    height: "70%",
+    color:"red"
   },
   button: {
     flex: 0.3,

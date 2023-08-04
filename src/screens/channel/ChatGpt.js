@@ -20,7 +20,7 @@ const ChatGpt = () => {
     // const apiKey ="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"
     const apiUrl = "https://api.openai.com/v1/engines/text-davinci-002/completions" //api request
     // const apiKey = "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"
-    const apiKey = "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"
+    const apiKey = "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"
     const [textInput, setTextInput] = useState("");
 
 
@@ -81,10 +81,12 @@ const ChatGpt = () => {
                     renderItem={({ item }) => (
                         // it takes an object 
                         // destructure it and render the View component with some styles and nested text component
-                        <View style={{ flexDirection: 'row', marginHorizontal: widthPixel(10), backgroundColor: "yellow" }}>
-                            <Text style={{ fontWeight: 'bold', color: item.type === "user" ? "green" : "red" }}>
+                        <View style={{ flexDirection: 'row', marginHorizontal: widthPixel(10), }}>
+                            <Text style={{fontWeight: 'bold', color: item.type === "user" ? "green" : "red" }}>
                                 {item.type === "user" ? "Mohsin: " : "Umer:  "}</Text>
+                                <View style={{ flex:1}}>
                             <Text style={styles.bot}>{item.text}</Text>
+                                    </View>
                         </View>
                     )}
                 />
@@ -140,6 +142,7 @@ const styles = StyleSheet.create({
         color: "#372329",
         fontFamily: "Nunito-Regular",
         fontSize: fontPixel(16),
+        // backgroundColor:"gray"
         // marginHorizontal: widthPixel(20)
 
     },
@@ -150,6 +153,7 @@ const styles = StyleSheet.create({
         height: 60,
         marginBottom: 10,
         borderRadius: 20,
+        color:"red"
     },
     button: {
         borderColor: "black",

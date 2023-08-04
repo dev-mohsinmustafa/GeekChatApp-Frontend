@@ -22,14 +22,29 @@ const ShakeSignal = () => {
   }, []);
 
   const sendDistressSignal = async () => {
-    try {
-      // Replace with your backend URL
-      const backendUrl = 'http://10.0.0.2:8090/sendDistressSignal';
-      const response = await axios.post(backendUrl);
+    const messageData = {
+      to: '+923007261440',
+      // from: '+17692103456',
+      from: '+12512972937',
+
+      body: 'Hello, Umer your sister is in problem please help her!',
+  };
+
+
+  try {
+      const response = await axios.post('http://10.0.2.2:8090/sendDistressSignal', messageData);
       console.log(response.data);
-    } catch (error) {
-      console.error('Error sending distress signal: ', error);
-    }
+  } catch (error) {
+      console.error(error);
+  }
+    // try {
+    //   // Replace with your backend URL
+    //   const backendUrl = 'http://10.0.0.2:8090/sendDistressSignal';
+    //   const response = await axios.post(backendUrl);
+    //   console.log(response.data);
+    // } catch (error) {
+    //   console.error('Error sending distress signal: ', error);
+    // }
   };
 
   return (

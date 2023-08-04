@@ -35,7 +35,7 @@ const ConnectNearby = ({ navigation }) => {
   const [date, setDate] = useState(new Date());
   const [mode, setMode] = useState("date");
   const [show, setShow] = useState(false);
-  const [text, setText] = useState("Empty");
+  const [text, setText] = useState("Date");
   const [time, setTime] = useState("Time");
 
 
@@ -295,8 +295,11 @@ const styles = StyleSheet.create({
     // backgroundColor: 'green',
   },
   textDate: {
-    fontWeight: "bold",
+    // fontWeight: "bold",
+    // fontSize: 10,
     fontSize: 10,
+    color: "#372329",
+    fontFamily: "Nunito-Regular",
     
   },
 
@@ -316,7 +319,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: widthPixel(10),
     backgroundColor: "#FFFFFF",
     width: "80%",
-    height: "70%"
+    height: "70%",
+    color:"red"
   },
   button: {
     flex: 0.3,
