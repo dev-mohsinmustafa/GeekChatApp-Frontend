@@ -24,7 +24,6 @@ module.exports = {
         paddingHorizontal: 20,
         marginTop: 10,
         fontSize: 18,
-        color:"red"
 
 
     },

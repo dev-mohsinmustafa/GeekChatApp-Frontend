@@ -344,7 +344,7 @@ const Profile = (props) => {
                   placeholder='Marie Antoinette'
                   placeholderTextColor="#372329"
                   style={[styles.input, styles.inputField, { textAlign: 'center', height: heightPixel(50), textAlignVertical: 'center', backgroundColor: "pink" }]}
-                >{userdata?.description}</Text>
+                >{userdata?.description || "No description available"}</Text>
               </View>
             </View>
 

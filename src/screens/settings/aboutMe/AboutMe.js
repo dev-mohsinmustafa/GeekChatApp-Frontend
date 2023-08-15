@@ -46,6 +46,12 @@ const AboutMe = () => {
 
                 </View>
 
+                <View>
+                    <Text style={styles.bible}>
+                        Software Developer
+                    </Text>
+
+                </View>
 
                 <ScrollView>
                     <Text style={styles.totor}>

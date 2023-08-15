@@ -62,6 +62,10 @@ const MessagePage = ({ navigation, route }) => {
     // hui the usko chat me save krenge or usko bad new chat ko be is me add krty jaye ge 
 
 
+// Mistake set
+const [userid, setUserid] = React.useState(null);
+
+
 
 
     // jab be socket me koi hal chal ho kush be changing ho to yaha pe useEffect update ho jaye 
@@ -185,6 +189,8 @@ const MessagePage = ({ navigation, route }) => {
                             // us ke otheruserdata wala route banaya hai  
                             setOuruserdata(data.user);
                             console.log("our user data", data.user.fullName);
+                            setUserid(data.user._id)
+
 
 
                             // 
@@ -484,15 +490,16 @@ const MessagePage = ({ navigation, route }) => {
                                 {/* agr msg mere ki id se aya hai to */}
 
                                 {
-                                    item.senderid == ouruserdata._id &&
+                                    item.senderid == userid &&
                                     <View style={styles.messageRight}>
                                         <Text style={styles.messageTextRight}>{item.message}</Text>
                                     </View>
                                 }
                                 {/* agr msg dost ki id se aya hai to */}
                                 {
-                                    item.senderid == fuserdata._id &&
-                                    <View style={messageLeft}>
+                                    // item.senderid == fuserdata &&
+                                    item.senderid != userid && item != '' &&
+                                    <View style={styles.messageLeft}>
                                         <Text style={styles.messageTextLeft}>{item.message}</Text>
                                     </View>
                                 }

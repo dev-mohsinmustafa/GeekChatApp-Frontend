@@ -19,7 +19,7 @@ const PrivacyPolicy = ({ navigation }) => {
         <View style={styles.container}>
 
 
-<View style={{flex:2}}>
+<View style={{flex:2, marginTop:20}}>
 
             <Header title="Privacy Policy" marginLeft={31} marginLeft1={27}
                 marginLeft2={9}
